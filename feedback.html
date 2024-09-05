@@ -1,0 +1,61 @@
+<html lang="en"><head></head><body>&lt;
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+
+
+    <h1>Feedback Form</h1>
+    <form action="/submit-application" method="post">
+        <!--Personal Information-->
+        <legend>Personal Information</legend><br>
+        <label for="fullname">Full Name: </label>
+        <input type="text" id="fullname" name="fullname" required=""><br><br>
+
+        <label for="registerno">Register Number: </label>
+        <input type="tel" id="registerno" name="registerno" required=""><br><br>
+
+        <label for="dept">Department: </label>
+        <input type="text" id="dept" name="dept" required=""><br><br>
+
+        <label for="year">Year of study: </label>
+        <input type="tel" id="year" name="year" required=""><br><br>
+
+        <!--Program Information-->
+
+        <legend>Program Details</legend><br>
+        <label for="programname">Program Name: </label>
+        <input type="text" id="programname" name="programname" required=""><br><br>
+
+        <label for="venue">Program Venue: </label>
+        <input type="text" id="venue" name="venue" required=""><br><br>
+
+        <label for="datev">Date of the program: </label>
+        <input type="date" id="datev" name="datev" required=""><br><br>
+
+        <label for="slot">Slot: </label> 
+        <input type="text" id="slot" name="slot" required=""><br><br>
+
+        <!--Feedbacks-->
+        <legend>Feedback</legend><br>
+        <label for="feedback" <label="">Overall Satisfaction:</label><br>
+        <input type="radio" id="satisfaction1" name="satisfaction" value="1"> 1
+        <input type="radio" id="satisfaction2" name="satisfaction" value="2"> 2
+        <input type="radio" id="satisfaction3" name="satisfaction" value="3"> 3
+        <input type="radio" id="satisfaction4" name="satisfaction" value="4"> 4
+        <input type="radio" id="satisfaction5" name="satisfaction" value="5"> 5<br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <label for="recommend">Would you recommend us?</label><br>
+        <input type="radio" id="recommendYes" name="recommend" value="yes"> Yes
+        <input type="radio" id="recommendNo" name="recommend" value="no"> No<br><br>
+
+        <input type="submit" value="Submit">
+
+
+    
+    </form>
+</body></html>  

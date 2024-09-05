@@ -1,0 +1,52 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdrawal Form</title>
+</head>
+<body>
+    <h2>Withdrawal Request Form</h2>
+    <form action="submit_withdrawal.php" method="post">
+        <!-- Account Information -->
+        <label for="account_number">Account Number:</label><br>
+        <input type="text" id="account_number" name="account_number" required=""><br><br>
+
+        <label for="full_name">Full Name:</label><br>
+        <input type="text" id="full_name" name="full_name" required=""><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required=""><br><br>
+
+        <!-- Withdrawal Details -->
+        <label for="withdrawal_amount">Withdrawal Amount:</label><br>
+        <input type="number" id="withdrawal_amount" name="withdrawal_amount" required=""><br><br>
+
+        <label for="currency">Currency:</label><br>
+        <select id="currency" name="currency" required="">
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+            <option value="gbp">GBP</option>
+            <option value="aud">AUD</option>
+            <option value="cad">CAD</option>
+        </select><br><br>
+
+        <label for="withdrawal_method">Withdrawal Method:</label><br>
+        <select id="withdrawal_method" name="withdrawal_method" required="">
+            <option value="bank_transfer">Bank Transfer</option>
+            <option value="paypal">PayPal</option>
+            <option value="check">Check</option>
+            <option value="crypto">Cryptocurrency</option>
+        </select><br><br>
+
+        <label for="reason">Reason for Withdrawal (Optional):</label><br>
+        <textarea id="reason" name="reason" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Agreement -->
+        <label for="agree">I confirm that the information provided is accurate and I authorize this withdrawal request.</label>
+        <input type="checkbox" id="agree" name="agree" required=""><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Withdrawal Request">
+    </form>
+
+
+</body></html>

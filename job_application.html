@@ -1,0 +1,190 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <h1>Job Application Form</h1>
+    <form action="/submit-application" method="post">
+        
+        <!-- Personal Information -->
+       
+            <legend>Personal Information</legend>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required=""><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required=""><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required=""><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required=""><br><br>
+ 
+
+        <!-- Position Details -->
+        
+            <legend>Position Details</legend>
+            <label for="position">Position Applying For:</label>
+            <input type="text" id="position" name="position" required=""><br><br>
+
+            <label for="startDate">Preferred Start Date:</label>
+            <input type="date" id="startDate" name="startDate"><br><br>
+
+            <label for="howDidYouHear">How Did You Hear About This Position?</label>
+            <input type="text" id="howDidYouHear" name="howDidYouHear"><br><br>
+        
+
+        <!-- Work Authorization -->
+       
+            <legend>Work Authorization</legend>
+            <label>Are you legally authorized to work in this country?</label><br>
+            <input type="radio" id="authorizedYes" name="authorized" value="yes" required="">
+            <label for="authorizedYes">Yes</label><br>
+            <input type="radio" id="authorizedNo" name="authorized" value="no">
+            <label for="authorizedNo">No</label><br><br>
+
+            <label>Will you now or in the future require sponsorship for employment visa status?</label><br>
+            <input type="radio" id="sponsorshipYes" name="sponsorship" value="yes" required="">
+            <label for="sponsorshipYes">Yes</label><br>
+            <input type="radio" id="sponsorshipNo" name="sponsorship" value="no">
+            <label for="sponsorshipNo">No</label><br><br>
+        
+
+        <!-- Education Background -->
+      
+            <legend>Education Background</legend>
+            <label for="educationLevel">Highest Level of Education:</label>
+            <select id="educationLevel" name="educationLevel" required="">
+                <option value="highSchool">High School</option>
+                <option value="associate">Associate</option>
+                <option value="bachelor">Bachelor’s</option>
+                <option value="master">Master’s</option>
+                <option value="phd">Ph.D.</option>
+            </select><br><br>
+
+            <label for="school">School/University Name:</label>
+            <input type="text" id="school" name="school" required=""><br><br>
+
+            <label for="major">Major/Field of Study:</label>
+            <input type="text" id="major" name="major" required=""><br><br>
+
+            <label for="graduationDate">Graduation Date:</label>
+            <input type="date" id="graduationDate" name="graduationDate"><br><br>
+        
+
+        <!-- Work Experience -->
+       
+            <legend>Work Experience</legend>
+            <label for="employer">Previous Employer Name:</label>
+            <input type="text" id="employer" name="employer" required=""><br><br>
+
+            <label for="jobTitle">Job Title:</label>
+            <input type="text" id="jobTitle" name="jobTitle" required=""><br><br>
+
+            <label for="employmentDates">Employment Dates:</label>
+            <input type="text" id="employmentDates" name="employmentDates" placeholder="e.g., Jan 2020 - Dec 2022" required=""><br><br>
+
+            <label for="responsibilities">Responsibilities:</label><br>
+            <textarea id="responsibilities" name="responsibilities" rows="4" cols="50" required=""></textarea><br><br>
+
+            <label for="reasonForLeaving">Reason for Leaving:</label>
+            <input type="text" id="reasonForLeaving" name="reasonForLeaving" required=""><br><br>
+
+            <label for="contactEmployer">May we contact this employer?</label><br>
+            <input type="radio" id="contactYes" name="contactEmployer" value="yes" required="">
+            <label for="contactYes">Yes</label><br>
+            <input type="radio" id="contactNo" name="contactEmployer" value="no">
+            <label for="contactNo">No</label><br><br>
+        
+
+        <!-- Skills -->
+       
+            <legend>Skills</legend>
+            <label for="skills">Relevant Skills (Include certifications, technical skills, languages, etc.):</label><br>
+            <textarea id="skills" name="skills" rows="4" cols="50" required=""></textarea><br><br>
+
+            <label for="proficiencyLevel">Proficiency Levels (Beginner, Intermediate, Advanced):</label><br>
+            <textarea id="proficiencyLevel" name="proficiencyLevel" rows="4" cols="50" required=""></textarea><br><br>
+        
+
+        <!-- References -->
+
+            <legend>References</legend>
+            <label for="referenceName">Reference Name:</label>
+            <input type="text" id="referenceName" name="referenceName" required=""><br><br>
+
+            <label for="relationship">Relationship to Applicant:</label>
+            <input type="text" id="relationship" name="relationship" required=""><br><br>
+
+            <label for="referenceCompany">Company Name:</label>
+            <input type="text" id="referenceCompany" name="referenceCompany" required=""><br><br>
+
+            <label for="referencePhone">Phone Number:</label>
+            <input type="tel" id="referencePhone" name="referencePhone" required=""><br><br>
+
+            <label for="referenceEmail">Email Address:</label>
+            <input type="email" id="referenceEmail" name="referenceEmail" required=""><br><br>
+        
+
+        <!-- Additional Information -->
+        
+            <legend>Additional Information</legend>
+            <label for="coverLetter">Cover Letter (optional):</label><br>
+            <textarea id="coverLetter" name="coverLetter" rows="4" cols="50"></textarea><br><br>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"><br><br>
+
+            <label for="portfolio">Portfolio or Work Samples (if applicable):</label>
+            <input type="file" id="portfolio" name="portfolio" accept=".pdf,.doc,.docx"><br><br>
+        
+
+        <!-- Availability -->
+       
+            <legend>Availability</legend>
+            <label>Are you available to work full-time?</label><br>
+            <input type="radio" id="fullTimeYes" name="availability" value="yes" required="">
+            <label for="fullTimeYes">Yes</label><br>
+            <input type="radio" id="fullTimeNo" name="availability" value="no">
+            <label for="fullTimeNo">No</label><br><br>
+
+            <label for="workSchedule">Preferred Work Schedule:</label>
+            <input type="text" id="workSchedule" name="workSchedule"><br><br>
+        
+
+        <!-- Background Check Consent -->
+       
+            <legend>Background Check Consent</legend>
+            <label>Do you consent to a background check?</label><br>
+            <input type="radio" id="backgroundCheckYes" name="backgroundCheck" value="yes" required="">
+            <label for="backgroundCheckYes">Yes</label><br>
+            <input type="radio" id="backgroundCheckNo" name="backgroundCheck" value="no">
+            <label for="backgroundCheckNo">No</label><br><br>
+
+            <label>Have you ever been convicted of a felony?</label><br>
+            <input type="radio" id="felonyYes" name="felony" value="yes" required="">
+            <label for="felonyYes">Yes</label><br>
+            <input type="radio" id="felonyNo" name="felony" value="no">
+            <label for="felonyNo">No</label><br><br>
+        
+
+        <!-- Signature -->
+      
+            <legend>Signature</legend>
+            <label for="signature">Applicant’s Signature (type your name):</label>
+            <input type="text" id="signature" name="signature" required=""><br><br>
+
+            <label for="signatureDate">Date:</label>
+            <input type="date" id="signatureDate" name="signatureDate" required=""><br><br>
+        
+
+        <input type="submit" value="Submit Application">
+    </form>
+
+
+</body></html>

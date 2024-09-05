@@ -1,0 +1,72 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Form</title>
+</head>
+<body>
+    <h2>Adoption Application Form</h2>
+    <form action="submit_adoption" method="post">
+        <!-- Personal Information -->
+        <label for="full_name">Full Name:</label><br>
+        <input type="text" id="full_name" name="full_name" required=""><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required=""><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required=""><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="3" cols="40" required=""></textarea><br><br>
+
+        <!-- Pet Preferences -->
+        <label for="pet_type">Type of Pet You Want to Adopt:</label><br>
+        <select id="pet_type" name="pet_type" required="">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="rabbit">Rabbit</option>
+            <option value="bird">Bird</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="pet_name">Preferred Pet Name (if known):</label><br>
+        <input type="text" id="pet_name" name="pet_name"><br><br>
+
+        <label for="pet_age">Preferred Pet Age:</label><br>
+        <select id="pet_age" name="pet_age" required="">
+            <option value="puppy/kitten">Puppy/Kitten</option>
+            <option value="young">Young</option>
+            <option value="adult">Adult</option>
+            <option value="senior">Senior</option>
+        </select><br><br>
+
+        <!-- Experience with Pets -->
+        <label for="experience">Do You Have Previous Experience with Pets?</label><br>
+        <input type="radio" id="experience_yes" name="experience" value="yes" required=""> Yes
+        <input type="radio" id="experience_no" name="experience" value="no"> No<br><br>
+
+        <label for="current_pets">Do You Currently Have Any Pets?</label><br>
+        <textarea id="current_pets" name="current_pets" rows="3" cols="40"></textarea><br><br>
+
+        <!-- Home Environment -->
+        <label for="home_type">Type of Home You Live In:</label><br>
+        <select id="home_type" name="home_type" required="">
+            <option value="house">House</option>
+            <option value="apartment">Apartment</option>
+            <option value="townhouse">Townhouse</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="yard">Do You Have a Yard?</label><br>
+        <input type="radio" id="yard_yes" name="yard" value="yes" required=""> Yes
+        <input type="radio" id="yard_no" name="yard" value="no"> No<br><br>
+
+        <!-- Agreement and Submission -->
+        <label for="agreement">I agree to provide a safe and loving home for the adopted pet.</label>
+        <input type="checkbox" id="agreement" name="agreement" value="agree" required=""><br><br>
+
+        <input type="submit" value="Submit Adoption Application">
+    </form>
+
+
+</body></html>
